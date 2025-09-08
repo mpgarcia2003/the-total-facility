@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { services } from '@/lib/locations'
+import { services } from '../lib/locations'  // Changed from '@/lib/locations'
 
 export default function ServicesPage() {
   return (
