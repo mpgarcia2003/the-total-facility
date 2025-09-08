@@ -1,5 +1,4 @@
-// app/locations/[state]/[city]/[service]/page.tsx
-import Link from 'next/link'  // Add this import
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { stateData, services, type StateKey } from '../../../../lib/locations'
 
@@ -26,14 +25,12 @@ export default async function ServicePage({
   const svc = services.find((x) => x.slug === service)
   if (!s || !c || !svc) return notFound()
 
-  // Get other services for internal linking
   const otherServices = services.filter(serv => serv.slug !== service)
   const otherCities = s.cities.filter(cityItem => cityItem.slug !== city)
 
   return (
     <div className="min-h-screen py-16 pt-24">
       <div className="container mx-auto px-4 max-w-4xl">
-        {/* Breadcrumb Navigation */}
         <nav className="text-sm mb-6">
           <Link href="/locations" className="text-blue-600 hover:underline">
             Locations
@@ -76,7 +73,7 @@ export default async function ServicePage({
             <p className="mb-4">
               Contact us today for a free consultation and customized quote for {svc.name.toLowerCase()} in {c.name}.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 flex-wrap">
               <a 
                 href="tel:1-800-TOTAL-FS" 
                 className="bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition"
@@ -93,7 +90,6 @@ export default async function ServicePage({
           </div>
         </div>
 
-        {/* Other Services in This City */}
         <div className="bg-gray-50 rounded-lg p-6 mb-8">
           <h3 className="text-xl font-semibold mb-4">
             Other Services Available in {c.name}
@@ -111,7 +107,6 @@ export default async function ServicePage({
           </div>
         </div>
 
-        {/* Nearby Cities */}
         {otherCities.length > 0 && (
           <div className="bg-gray-50 rounded-lg p-6 mb-8">
             <h3 className="text-xl font-semibold mb-4">
@@ -131,12 +126,11 @@ export default async function ServicePage({
           </div>
         )}
 
-        {/* Footer Navigation */}
         <div className="text-center border-t pt-6">
           <p className="text-gray-600 mb-4">
             Serving {c.name} and surrounding areas in {s.name}
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-center gap-4 flex-wrap">
             <Link href={`/locations/${state}/${city}`} className="text-blue-600 hover:underline">
               ← Back to {c.name} Services
             </Link>
