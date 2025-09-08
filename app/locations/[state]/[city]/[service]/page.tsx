@@ -61,7 +61,7 @@ export default async function ServicePage({
             We provide top-quality facility services with trained, insured, and background-checked staff.
           </p>
           
-          <h3 className="text-xl font-semibold mb-3">What's Included:</h3>
+          <h3 className="text-xl font-semibold mb-3">What&apos;s Included:</h3>
           <ul className="list-disc pl-6 space-y-2 mb-6">
             <li>24/7 emergency response available</li>
             <li>Fully insured and bonded service</li>
