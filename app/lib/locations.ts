@@ -490,7 +490,7 @@ export const stateData: Record<StateKey, StateInfo> = {
       { 
         slug: 'stamford', 
         name: 'Stamford',
-        areasCovered: ['Downtown Stamford', 'Harbor Point', 'Bull's Head', 'North Stamford', 'Springdale'],
+        areasCovered: ['Downtown Stamford', 'Harbor Point', 'Bulls Head', 'North Stamford', 'Springdale'],
         neighborhoods: 'Bedford Street, Atlantic Street, Washington Boulevard, High Ridge Road',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
