@@ -8,7 +8,7 @@ const services = [
     title: 'Daily Janitorial Services',
     description: 'Professional cleaning staff for your facility every day',
     icon: '🏢',
-    link: '/services/janitorial'
+    link: '/locations'
   },
   {
     title: 'Emergency Response 24/7',
@@ -20,25 +20,25 @@ const services = [
     title: 'Floor Care Specialists',
     description: 'Strip, wax, buff, and carpet cleaning experts',
     icon: '✨',
-    link: '/services/floor-care'
+    link: '/locations'
   },
   {
     title: 'Medical Grade Cleaning',
     description: 'HIPAA compliant, terminal cleaning for healthcare',
     icon: '🏥',
-    link: '/services/medical'
+    link: '/locations'
   },
   {
     title: 'Post-Construction',
     description: 'Complete cleanup for renovations and new builds',
     icon: '🔨',
-    link: '/services/construction'
+    link: '/locations'
   },
   {
     title: 'Day Porter Services',
     description: 'Professional staff during business hours',
     icon: '👔',
-    link: '/services/day-porter'
+    link: '/locations'
   }
 ]
 
@@ -124,7 +124,7 @@ export default function HomePage() {
                 <li>✓ Jersey City</li>
                 <li>✓ Paterson</li>
                 <li>✓ Elizabeth</li>
-                <li>✓ Morristown</li>
+                <li>✓ Hoboken</li>
               </ul>
             </div>
             <div>
@@ -141,10 +141,9 @@ export default function HomePage() {
               <h3 className="font-bold text-xl mb-4 text-blue-900">Florida</h3>
               <ul className="space-y-2 text-gray-600">
                 <li>✓ Miami</li>
-                <li>✓ Miami Beach</li>
+                <li>✓ Fort Lauderdale</li>
                 <li>✓ Orlando</li>
-                <li>✓ Winter Park</li>
-                <li>✓ Coral Gables</li>
+                <li>✓ Tampa</li>
               </ul>
             </div>
           </div>
