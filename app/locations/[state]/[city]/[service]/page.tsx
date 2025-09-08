@@ -115,7 +115,7 @@ export default async function ServicePage({
             <div className="bg-blue-50 p-6 rounded-lg mb-6">
               <h3 className="text-lg font-semibold mb-3">What Our {c.name} Clients Say:</h3>
               <blockquote className="italic text-gray-700 mb-2">
-                "{c.localTestimonial.text}"
+                &ldquo;{c.localTestimonial.text}&rdquo;
               </blockquote>
               <p className="text-sm text-gray-600">— {c.localTestimonial.author}</p>
             </div>
