@@ -92,21 +92,20 @@ export default async function ServicePage({
             </div>
           </div>
 
-          {/* Pricing and contract info */}
+          {/* Pricing and response info */}
           <div className="bg-gray-50 p-4 rounded-lg mb-6">
-            <div className="grid md:grid-cols-3 gap-4 text-center">
+            <div className="grid md:grid-cols-2 gap-4 text-center">
               <div>
                 <p className="text-sm text-gray-600">Starting Price</p>
                 <p className="text-xl font-bold text-blue-900">{svc.basePrice}</p>
               </div>
               <div>
-                <p className="text-sm text-gray-600">Minimum Contract</p>
-                <p className="text-xl font-bold text-blue-900">{c.minContract}</p>
-              </div>
-              <div>
                 <p className="text-sm text-gray-600">Response Time</p>
                 <p className="text-xl font-bold text-blue-900">{c.responseTime}</p>
               </div>
+            </div>
+            <div className="text-center mt-3">
+              <p className="text-sm text-green-600 font-semibold">No Minimum Contract Required</p>
             </div>
           </div>
 
