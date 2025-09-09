@@ -17,10 +17,10 @@ export default function Hero() {
               Get Free Quote
             </a>
             <a 
-              href="tel:1-800-TOTAL-FS"
+              href="tel:8444543101"
               className="inline-block bg-red-600 text-white px-8 py-4 rounded-lg text-xl font-bold hover:bg-red-700"
             >
-              24/7 Emergency: 1-800-TOTAL-FS
+              24/7 Emergency: (844) 454-3101
             </a>
           </div>
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">

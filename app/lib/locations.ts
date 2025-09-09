@@ -234,15 +234,15 @@ export const stateData: Record<StateKey, StateInfo> = {
     name: 'New York',
     licenseNumber: 'NY-CSL-2024-1847',
     insurance: 'General Liability $2M, Workers Comp Active',
-    mainPhone: '1-800-TOTAL-FS',
-    emergencyPhone: '1-800-TOTAL-FS',
+    mainPhone: '(844) 454-3101',
+    emergencyPhone: '(844) 454-3101',
     cities: [
       { 
         slug: 'new-york', 
         name: 'New York City',
         areasCovered: ['Manhattan', 'Brooklyn', 'Queens', 'Bronx', 'Staten Island'],
         neighborhoods: 'Financial District, Midtown, Upper East Side, Upper West Side, Chelsea, Tribeca, SoHo, Harlem, Long Island City',
-        localPhone: '1-800-TOTAL-FS',
+        localPhone: '(844) 454-3101',
         responseTime: '2 hours or less',
 
         majorClients: 'Serving over 200 office buildings in Manhattan',
@@ -262,7 +262,7 @@ export const stateData: Record<StateKey, StateInfo> = {
         name: 'Buffalo',
         areasCovered: ['Downtown Buffalo', 'North Buffalo', 'South Buffalo', 'Amherst', 'Cheektowaga'],
         neighborhoods: 'Allentown, Elmwood Village, Delaware District, Canalside, Medical Campus',
-        localPhone: '1-800-TOTAL-FS',
+        localPhone: '(844) 454-3101',
         responseTime: '90 minutes or less',
 
         majorClients: 'Trusted by Buffalo medical corridor and downtown businesses',
@@ -438,8 +438,8 @@ export const stateData: Record<StateKey, StateInfo> = {
     name: 'New Jersey',
     licenseNumber: 'NJ-BUS-2024-9821',
     insurance: 'General Liability $2M, Workers Comp Active',
-    mainPhone: '1-800-TOTAL-FS',
-    emergencyPhone: '1-800-TOTAL-FS',
+    mainPhone: '(844) 454-3101',
+    emergencyPhone: '(844) 454-3101',
     cities: [
       { 
         slug: 'newark', 
@@ -676,8 +676,8 @@ export const stateData: Record<StateKey, StateInfo> = {
     name: 'Connecticut',
     licenseNumber: 'CT-JAN-2024-5544',
     insurance: 'General Liability $2M, Workers Comp Active',
-    mainPhone: '1-800-TOTAL-FS',
-    emergencyPhone: '1-800-TOTAL-FS',
+    mainPhone: '(844) 454-3101',
+    emergencyPhone: '(844) 454-3101',
     cities: [
       { 
         slug: 'stamford', 
@@ -875,8 +875,8 @@ export const stateData: Record<StateKey, StateInfo> = {
     name: 'Florida',
     licenseNumber: 'FL-JANITORIAL-2024-8745',
     insurance: 'General Liability $2M, Hurricane damage coverage',
-    mainPhone: '1-800-TOTAL-FS',
-    emergencyPhone: '1-800-TOTAL-FS',
+    mainPhone: '(844) 454-3101',
+    emergencyPhone: '(844) 454-3101',
     cities: [
       { 
         slug: 'miami', 
@@ -1034,6 +1034,43 @@ export const stateData: Record<StateKey, StateInfo> = {
         slug: 'boca-raton', 
         name: 'Boca Raton',
         areasCovered: ['Corporate Center', 'Town Center', 'Mizner Park', 'University campus', 'Technology parks'],
+        neighborhoods: 'Corporate offices, financial institutions, universities, tech companies',
+        localPhone: '(844) 454-3101',
+        responseTime: '90 minutes or less',
+        majorClients: 'Serving Boca Raton corporate offices and financial institutions',
+        localTestimonial: {
+          text: 'Professional service for our corporate headquarters. Very reliable team.',
+          author: 'Facilities Manager, Boca Raton Corporate Center'
+        },
+        competitorPricing: 'Premium South Florida corporate rates',
+        specialties: ['Corporate offices', 'Financial institutions', 'Universities', 'Technology companies'],
+        certifications: ['Financial services approved', 'University certified', 'MBE Certified'],
+        localKeywords: ['Boca Raton commercial cleaning', 'South Florida corporate cleaning', 'Boca office cleaning'],
+        parkingNote: 'Corporate campus parking available',
+        unionStatus: 'Professional corporate workforce'
+      },
+      { 
+        slug: 'st-petersburg', 
+        name: 'St. Petersburg',
+        areasCovered: ['Downtown St. Petersburg', 'Central Avenue', 'Westshore', 'Gateway area', 'Medical district'],
+        neighborhoods: 'Downtown office market, retail centers, healthcare facilities',
+        localPhone: '(844) 454-3101',
+        responseTime: '90 minutes or less',
+        majorClients: 'Serving St. Petersburg downtown offices and healthcare facilities',
+        localTestimonial: {
+          text: 'Excellent service for our downtown office building. Very professional.',
+          author: 'Building Manager, St. Petersburg Office Tower'
+        },
+        competitorPricing: 'Competitive Tampa Bay area rates',
+        specialties: ['Downtown offices', 'Retail centers', 'Healthcare facilities', 'Medical centers'],
+        certifications: ['Florida Licensed', 'Healthcare compliant', 'MBE Certified'],
+        localKeywords: ['St. Petersburg commercial cleaning', 'Tampa Bay cleaning', 'St. Pete office cleaning'],
+        parkingNote: 'Downtown parking garages available',
+        unionStatus: 'Professional workforce'
+      }
+    ]
+  }
+} 'Town Center', 'Mizner Park', 'University campus', 'Technology parks'],
         neighborhoods: 'Corporate offices, financial institutions, universities, tech companies',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',

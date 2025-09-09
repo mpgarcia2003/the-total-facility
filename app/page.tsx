@@ -176,10 +176,10 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <p className="text-2xl mb-4">Need Emergency Cleaning?</p>
           <a 
-            href="tel:1-800-TOTAL-FS" 
+            href="tel:8444543101" 
             className="inline-block bg-red-600 text-white px-8 py-4 rounded-lg text-xl font-bold hover:bg-red-700"
           >
-            Call Now: 1-800-TOTAL-FS
+            Call Now: (844) 454-3101
           </a>
         </div>
       </section>
