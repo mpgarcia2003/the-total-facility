@@ -17,7 +17,7 @@ export type City = {
   neighborhoods: string
   localPhone: string
   responseTime: string
-  minContract: string
+
   majorClients: string
   localTestimonial: {
     text: string
@@ -57,7 +57,7 @@ export const services: Service[] = [
       'Spill and emergency response',
       'Trash removal throughout the day'
     ],
-    basePrice: '$35-45/hour',
+    basePrice: '$25-30/hour',
     industries: ['Corporate Offices', 'Medical Facilities', 'Schools', 'Retail']
   },
   { 
@@ -74,7 +74,7 @@ export const services: Service[] = [
       'Floor stripping and waxing',
       'Comprehensive restroom sanitization'
     ],
-    basePrice: '$32-42/hour',
+    basePrice: '$25-30/hour',
     industries: ['Banks', 'Corporate Offices', 'Healthcare', 'Educational']
   },
   { 
@@ -108,7 +108,7 @@ export const services: Service[] = [
       'Rapid response within 2 hours',
       'Insurance coordination'
     ],
-    basePrice: '$75-150/hour',
+    basePrice: '$65-85/hour',
     industries: ['All Industries', 'Property Management', 'Healthcare', 'Retail']
   },
   { 
@@ -125,7 +125,7 @@ export const services: Service[] = [
       'Fixture and surface polishing',
       'HVAC vent cleaning'
     ],
-    basePrice: '$0.10-0.50/sq ft',
+    basePrice: '$0.35-0.55/sq ft',
     industries: ['Construction', 'Real Estate', 'Property Development', 'Renovation']
   },
   { 
@@ -142,7 +142,7 @@ export const services: Service[] = [
       'Carpet protection application',
       'High-traffic area treatment'
     ],
-    basePrice: '$0.15-0.30/sq ft',
+    basePrice: '$0.30-0.45/sq ft',
     industries: ['Offices', 'Hotels', 'Retail', 'Healthcare']
   },
   { 
@@ -196,7 +196,7 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Financial District, Midtown, Upper East Side, Upper West Side, Chelsea, Tribeca, SoHo, Harlem, Long Island City',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '2 hours or less',
-        minContract: '$5,000/month',
+
         majorClients: 'Serving over 200 office buildings in Manhattan',
         localTestimonial: {
           text: 'The Total Facility has maintained our 40-floor office building for 3 years. Their attention to detail is exceptional.',
@@ -216,7 +216,7 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Allentown, Elmwood Village, Delaware District, Canalside, Medical Campus',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$2,000/month',
+
         majorClients: 'Trusted by Buffalo medical corridor and downtown businesses',
         localTestimonial: {
           text: 'Excellent service through harsh Buffalo winters. They never miss a day, snow or shine.',
@@ -236,7 +236,7 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'East End, Park Avenue, South Wedge, High Falls, College Town',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$2,500/month',
+
         majorClients: 'Serving Rochester tech companies and healthcare facilities',
         localTestimonial: {
           text: 'Professional team that understands our tech company needs. Highly recommend.',
@@ -256,7 +256,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Armory Square, Hanover Square, Franklin Square, University Area',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '2 hours or less',
-        minContract: '$2,000/month',
         majorClients: 'Serving Syracuse University area and downtown businesses',
         localTestimonial: {
           text: 'Reliable service for our entire office complex. Great communication and results.',
@@ -276,7 +275,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Center Square, Washington Park, Lark Street, State Street',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$2,500/month',
         majorClients: 'Serving state government buildings and corporate offices',
         localTestimonial: {
           text: 'Excellent service for our government facility. Security cleared and professional.',
@@ -296,7 +294,7 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Waterfront, Ridge Hill, Colonial Heights, Lincoln Park',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$3,000/month',
+
         majorClients: 'Serving Yonkers waterfront developments and corporate parks',
         localTestimonial: {
           text: 'Great service for our entire office park. Very responsive to our needs.',
@@ -316,7 +314,7 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Mamaroneck Avenue, Post Road, City Center, Hospital District',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$3,500/month',
+
         majorClients: 'Serving White Plains financial district and hospital campuses',
         localTestimonial: {
           text: 'Top-notch service for our medical facility. Understands healthcare standards.',
@@ -345,7 +343,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Military Park, Penn Station area, Prudential Center area, Newark Airport area',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$3,000/month',
         majorClients: 'Serving Newark business district and airport area facilities',
         localTestimonial: {
           text: 'Reliable service for our corporate headquarters. Always professional.',
@@ -365,7 +362,7 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Waterfront, Grove Street, Hamilton Park, Paulus Hook',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$4,000/month',
+
         majorClients: 'Serving Jersey City financial district and waterfront developments',
         localTestimonial: {
           text: 'Excellent service for our high-rise office building. Very detail-oriented.',
@@ -385,7 +382,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Great Falls area, Market Street, Main Street corridor',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '2 hours or less',
-        minContract: '$2,000/month',
         majorClients: 'Serving Paterson industrial and healthcare facilities',
         localTestimonial: {
           text: 'Dependable service for our manufacturing facility. Great value.',
@@ -405,7 +401,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Broad Street, Elizabeth Avenue, North Avenue corridor',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$2,500/month',
         majorClients: 'Serving Port Elizabeth area and downtown businesses',
         localTestimonial: {
           text: 'Great service for our logistics facility. Understands our 24/7 needs.',
@@ -425,7 +420,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Route 1 corridor, Oak Tree Road, Raritan Center',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$3,000/month',
         majorClients: 'Serving Raritan Center and Route 1 businesses',
         localTestimonial: {
           text: 'Excellent service for our corporate campus. Very professional team.',
@@ -445,7 +439,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'State House area, Hanover Street, Market Street',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$2,500/month',
         majorClients: 'Serving state government buildings and downtown offices',
         localTestimonial: {
           text: 'Reliable service for our state office building. Security cleared staff.',
@@ -465,7 +458,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Washington Street, River Street, PATH station area',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '60 minutes or less',
-        minContract: '$3,500/month',
         majorClients: 'Serving Hoboken tech companies and luxury buildings',
         localTestimonial: {
           text: 'Perfect for our boutique office space. Attention to detail is outstanding.',
@@ -494,7 +486,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Bedford Street, Atlantic Street, Washington Boulevard, High Ridge Road',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$4,000/month',
         majorClients: 'Serving Stamford financial district and corporate headquarters',
         localTestimonial: {
           text: 'Outstanding service for our corporate headquarters. Consistently excellent.',
@@ -514,7 +505,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Constitution Plaza, Bushnell area, Capitol area',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$3,000/month',
         majorClients: 'Serving Hartford insurance companies and state buildings',
         localTestimonial: {
           text: 'Excellent service for our insurance headquarters. Very reliable.',
@@ -534,7 +524,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Chapel Street, Broadway, Whitney Avenue, Science Park',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$3,000/month',
         majorClients: 'Serving Yale University area and medical district',
         localTestimonial: {
           text: 'Great service for our medical facility. Understands healthcare requirements.',
@@ -554,7 +543,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Main Street, Fairfield Avenue, Boston Avenue, Park Avenue',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$2,500/month',
         majorClients: 'Serving Bridgeport businesses and healthcare facilities',
         localTestimonial: {
           text: 'Reliable and affordable service for our facility. Great communication.',
@@ -574,7 +562,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Wall Street, Washington Street, Connecticut Avenue, Main Avenue',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$3,000/month',
         majorClients: 'Serving Norwalk corporate offices and retail centers',
         localTestimonial: {
           text: 'Excellent service for our office complex. Always responsive to requests.',
@@ -603,7 +590,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Financial District, Design District, Wynwood, Midtown, Aventura',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes in Dade County',
-        minContract: '$4,000/month',
         majorClients: 'Serving Brickell financial district and Miami Beach hotels',
         localTestimonial: {
           text: 'Outstanding hurricane cleanup and regular maintenance. True professionals.',
@@ -623,7 +609,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Church Street, Orange Avenue, Mills District, Thornton Park',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$3,000/month',
         majorClients: 'Serving Orlando theme park area and medical city',
         localTestimonial: {
           text: 'Excellent service for our hospitality facility. Understands tourism industry needs.',
@@ -643,7 +628,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Bayshore Boulevard, Dale Mabry, Kennedy Boulevard, Florida Avenue',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$3,000/month',
         majorClients: 'Serving Tampa Bay financial district and medical facilities',
         localTestimonial: {
           text: 'Reliable service through hurricane season. Always prepared and professional.',
@@ -663,7 +647,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         neighborhoods: 'Las Olas Boulevard, Federal Highway, Sunrise Boulevard, A1A',
         localPhone: '1-800-TOTAL-FS',
         responseTime: '90 minutes or less',
-        minContract: '$3,500/month',
         majorClients: 'Serving Fort Lauderdale marine industry and beach hotels',
         localTestimonial: {
           text: 'Perfect for our beachfront property. Handles salt air challenges expertly.',
