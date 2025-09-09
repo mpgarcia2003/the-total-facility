@@ -107,7 +107,7 @@ export default function HomePage() {
             Serving 42 Cities Across 4 States
           </h2>
           <p className="text-xl text-center text-gray-600 mb-12">
-            From NYC to Miami, we're your trusted facility services partner
+            From NYC to Miami, we&apos;re your trusted facility services partner
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
