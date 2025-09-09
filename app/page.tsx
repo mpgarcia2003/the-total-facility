@@ -103,47 +103,55 @@ export default function HomePage() {
       {/* Service Areas */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            Serving Major Metro Areas
+          <h2 className="text-4xl font-bold text-center mb-4">
+            Serving 42 Cities Across 4 States
           </h2>
+          <p className="text-xl text-center text-gray-600 mb-12">
+            From NYC to Miami, we're your trusted facility services partner
+          </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-bold text-xl mb-4 text-blue-900">New York</h3>
+              <h3 className="font-bold text-xl mb-4 text-blue-900">New York (10 Cities)</h3>
               <ul className="space-y-2 text-gray-600">
-                <li>✓ Manhattan</li>
-                <li>✓ Brooklyn</li>
-                <li>✓ Queens</li>
-                <li>✓ Bronx</li>
-                <li>✓ Westchester</li>
+                <li>✓ Manhattan & NYC</li>
+                <li>✓ White Plains</li>
+                <li>✓ Yonkers</li>
+                <li>✓ Buffalo</li>
+                <li>✓ Long Island</li>
+                <li className="text-sm">+ 5 more cities</li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold text-xl mb-4 text-blue-900">New Jersey</h3>
+              <h3 className="font-bold text-xl mb-4 text-blue-900">New Jersey (12 Cities)</h3>
               <ul className="space-y-2 text-gray-600">
                 <li>✓ Newark</li>
                 <li>✓ Jersey City</li>
-                <li>✓ Paterson</li>
-                <li>✓ Elizabeth</li>
                 <li>✓ Hoboken</li>
+                <li>✓ Princeton</li>
+                <li>✓ Paramus</li>
+                <li className="text-sm">+ 7 more cities</li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold text-xl mb-4 text-blue-900">Connecticut</h3>
+              <h3 className="font-bold text-xl mb-4 text-blue-900">Connecticut (10 Cities)</h3>
               <ul className="space-y-2 text-gray-600">
+                <li>✓ Stamford</li>
+                <li>✓ Greenwich</li>
                 <li>✓ Hartford</li>
                 <li>✓ New Haven</li>
-                <li>✓ Stamford</li>
-                <li>✓ Bridgeport</li>
-                <li>✓ Norwalk</li>
+                <li>✓ Westport</li>
+                <li className="text-sm">+ 5 more cities</li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold text-xl mb-4 text-blue-900">Florida</h3>
+              <h3 className="font-bold text-xl mb-4 text-blue-900">Florida (10 Cities)</h3>
               <ul className="space-y-2 text-gray-600">
-                <li>✓ Miami</li>
+                <li>✓ Miami & Brickell</li>
                 <li>✓ Fort Lauderdale</li>
+                <li>✓ West Palm Beach</li>
                 <li>✓ Orlando</li>
                 <li>✓ Tampa</li>
+                <li className="text-sm">+ 5 more cities</li>
               </ul>
             </div>
           </div>

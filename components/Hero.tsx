@@ -25,7 +25,7 @@ export default function Hero() {
           </div>
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div>
-              <p className="text-4xl font-bold">23</p>
+              <p className="text-4xl font-bold">42</p>
               <p>Cities Served</p>
             </div>
             <div>
