@@ -249,7 +249,6 @@ export const stateData: Record<StateKey, StateInfo> = {
         localTestimonial: {
           text: 'The Total Facility has maintained our 40-floor office building for 3 years. Their attention to detail is exceptional.',
           author: 'Property Manager, Midtown Manhattan'
-        },
         competitorPricing: 'Save 15-20% compared to other Manhattan commercial cleaners',
         specialties: ['High-rise buildings', 'Trading floors', 'Luxury retail spaces', 'Medical offices'],
         certifications: ['NYC DOB Licensed', 'REBNY Approved Vendor', 'MBE Certified'],
@@ -374,6 +373,63 @@ export const stateData: Record<StateKey, StateInfo> = {
         localKeywords: ['White Plains commercial cleaning', 'Westchester office cleaning', 'White Plains janitorial'],
         parkingNote: 'Garage parking available',
         unionStatus: 'Union and non-union available'
+      },
+      { 
+        slug: 'long-island', 
+        name: 'Long Island',
+        areasCovered: ['Hempstead', 'Garden City', 'Melville', 'Uniondale', 'Westbury'],
+        neighborhoods: 'Nassau County corridor, Suffolk corporate parks, business districts',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '90 minutes or less',
+        majorClients: 'Serving Long Island suburban corporate headquarters and office parks',
+        localTestimonial: {
+          text: 'Professional service for our corporate campus. Great value for Long Island.',
+          author: 'Facility Manager, Garden City Corporate Center'
+        },
+        competitorPricing: 'Competitive Long Island rates',
+        specialties: ['Corporate headquarters', 'Office parks', 'Medical facilities', 'Retail centers'],
+        certifications: ['NYS Licensed', 'Nassau County approved', 'MBE Certified'],
+        localKeywords: ['Long Island commercial cleaning', 'Nassau County janitorial', 'Hempstead office cleaning'],
+        parkingNote: 'Ample free parking at all locations',
+        unionStatus: 'Flexible workforce options'
+      },
+      { 
+        slug: 'staten-island', 
+        name: 'Staten Island',
+        areasCovered: ['St. George', 'New Springville', 'Tottenville', 'West Brighton', 'Stapleton'],
+        neighborhoods: 'Industrial corridor, Teleport business park, Richmond Avenue',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '90 minutes or less',
+        majorClients: 'Serving Staten Island warehouses and logistics facilities',
+        localTestimonial: {
+          text: 'Reliable service for our distribution center. Understands industrial needs.',
+          author: 'Operations Manager, Staten Island Logistics Hub'
+        },
+        competitorPricing: 'Best rates for Staten Island industrial facilities',
+        specialties: ['Warehouses', 'Logistics facilities', 'Industrial complexes', 'Distribution centers'],
+        certifications: ['NYS Licensed', 'Industrial safety certified', 'MBE Certified'],
+        localKeywords: ['Staten Island commercial cleaning', 'Staten Island industrial cleaning', 'warehouse cleaning'],
+        parkingNote: 'Free parking at all Staten Island locations',
+        unionStatus: 'Union and non-union workforce'
+      },
+      { 
+        slug: 'new-rochelle', 
+        name: 'New Rochelle',
+        areasCovered: ['Downtown New Rochelle', 'North Avenue', 'Echo Bay', 'Beechmont', 'Wykagyl'],
+        neighborhoods: 'Main Street corridor, luxury developments, mixed-use properties',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '90 minutes or less',
+        majorClients: 'Serving New Rochelle luxury residential and mixed-use developments',
+        localTestimonial: {
+          text: 'Excellent service for our luxury residential tower. Very professional team.',
+          author: 'Property Manager, New Rochelle Luxury Residences'
+        },
+        competitorPricing: 'Premium Westchester County rates',
+        specialties: ['Luxury residential', 'Mixed-use developments', 'Retail spaces', 'Corporate offices'],
+        certifications: ['NYS Licensed', 'Westchester approved', 'MBE Certified'],
+        localKeywords: ['New Rochelle commercial cleaning', 'Westchester janitorial', 'New Rochelle luxury cleaning'],
+        parkingNote: 'Garage and street parking available',
+        unionStatus: 'Professional workforce'
       }
     ]
   },
@@ -517,6 +573,101 @@ export const stateData: Record<StateKey, StateInfo> = {
         localKeywords: ['Hoboken commercial cleaning', 'Hoboken office cleaning', 'Hudson County janitorial'],
         parkingNote: 'Street parking permits available',
         unionStatus: 'Professional workforce'
+      },
+      { 
+        slug: 'paramus', 
+        name: 'Paramus',
+        areasCovered: ['Garden State Plaza area', 'Route 4 corridor', 'Route 17 North', 'Fashion Center', 'Corporate parks'],
+        neighborhoods: 'Retail capital of NJ, office parks, shopping centers',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '90 minutes or less',
+        majorClients: 'Serving Paramus retail centers and corporate office parks',
+        localTestimonial: {
+          text: 'Outstanding service for our retail complex. Understands high-traffic needs.',
+          author: 'Facility Manager, Paramus Shopping Center'
+        },
+        competitorPricing: 'Competitive Bergen County rates',
+        specialties: ['Retail centers', 'Office parks', 'Shopping complexes', 'Corporate facilities'],
+        certifications: ['NJ State Licensed', 'Retail facility certified', 'MBE Certified'],
+        localKeywords: ['Paramus commercial cleaning', 'Bergen County janitorial', 'Paramus retail cleaning'],
+        parkingNote: 'Mall and office park parking available',
+        unionStatus: 'Flexible workforce'
+      },
+      { 
+        slug: 'princeton', 
+        name: 'Princeton',
+        areasCovered: ['Princeton University area', 'Route 1 corridor', 'Princeton Junction', 'Lawrenceville', 'West Windsor'],
+        neighborhoods: 'University campus, biotech corridor, research facilities',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '90 minutes or less',
+        majorClients: 'Serving Princeton University and biotech research facilities',
+        localTestimonial: {
+          text: 'Excellent service for our research facility. Understands laboratory requirements.',
+          author: 'Operations Director, Princeton Biotech Center'
+        },
+        competitorPricing: 'Competitive university and research rates',
+        specialties: ['Universities', 'Biotech facilities', 'Research labs', 'Corporate headquarters'],
+        certifications: ['University approved', 'Laboratory safety certified', 'MBE Certified'],
+        localKeywords: ['Princeton commercial cleaning', 'Princeton University cleaning', 'biotech facility cleaning'],
+        parkingNote: 'Campus and research facility parking',
+        unionStatus: 'Professional academic workforce'
+      },
+      { 
+        slug: 'secaucus', 
+        name: 'Secaucus / Meadowlands',
+        areasCovered: ['Secaucus business district', 'Meadowlands complex', 'Harmon Cove', 'Park Plaza', 'Corporate campuses'],
+        neighborhoods: 'Corporate campuses, hotels, event venues, logistics hubs',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '60 minutes or less',
+        majorClients: 'Serving Meadowlands corporate campuses and event venues',
+        localTestimonial: {
+          text: 'Reliable service for our corporate campus. Great for event cleanup too.',
+          author: 'Facility Manager, Meadowlands Corporate Center'
+        },
+        competitorPricing: 'Premium corporate campus rates',
+        specialties: ['Corporate campuses', 'Hotels', 'Event venues', 'Conference centers'],
+        certifications: ['NJ Licensed', 'Event facility certified', 'MBE Certified'],
+        localKeywords: ['Secaucus commercial cleaning', 'Meadowlands cleaning', 'corporate campus cleaning'],
+        parkingNote: 'Ample corporate campus parking',
+        unionStatus: 'Union and non-union options'
+      },
+      { 
+        slug: 'morristown', 
+        name: 'Morristown',
+        areasCovered: ['Downtown Morristown', 'Morris Corporate Center', 'Headquarters Plaza', 'Madison Avenue', 'Corporate offices'],
+        neighborhoods: 'Corporate headquarters, professional services, historic district',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '90 minutes or less',
+        majorClients: 'Serving Morristown corporate headquarters and professional services',
+        localTestimonial: {
+          text: 'Professional service for our corporate HQ. Very responsive team.',
+          author: 'Operations Manager, Morristown Corporate Plaza'
+        },
+        competitorPricing: 'Competitive Morris County rates',
+        specialties: ['Corporate headquarters', 'Professional services', 'Law firms', 'Financial offices'],
+        certifications: ['NJ State Licensed', 'Professional services certified', 'MBE Certified'],
+        localKeywords: ['Morristown commercial cleaning', 'Morris County janitorial', 'Morristown office cleaning'],
+        parkingNote: 'Downtown and corporate parking available',
+        unionStatus: 'Professional workforce'
+      },
+      { 
+        slug: 'cherry-hill', 
+        name: 'Cherry Hill / Camden',
+        areasCovered: ['Cherry Hill Township', 'Camden business district', 'Route 70 corridor', 'Haddonfield', 'Voorhees'],
+        neighborhoods: 'South Jersey corridor, corporate offices, healthcare facilities',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '2 hours or less',
+        majorClients: 'Serving South Jersey corporate and healthcare facilities',
+        localTestimonial: {
+          text: 'Excellent service for our healthcare facility. Understands medical standards.',
+          author: 'Administrator, Cherry Hill Medical Center'
+        },
+        competitorPricing: 'Best value in South Jersey',
+        specialties: ['Healthcare facilities', 'Corporate offices', 'Medical centers', 'Professional services'],
+        certifications: ['Healthcare compliant', 'NJ State Licensed', 'MBE Certified'],
+        localKeywords: ['Cherry Hill commercial cleaning', 'Camden janitorial', 'South Jersey cleaning'],
+        parkingNote: 'Free parking at most locations',
+        unionStatus: 'Flexible workforce options'
       }
     ]
   },
@@ -621,6 +772,101 @@ export const stateData: Record<StateKey, StateInfo> = {
         localKeywords: ['Norwalk commercial cleaning', 'Norwalk office cleaning', 'SoNo janitorial'],
         parkingNote: 'Convenient parking',
         unionStatus: 'Professional staff'
+      },
+      { 
+        slug: 'greenwich', 
+        name: 'Greenwich',
+        areasCovered: ['Greenwich Avenue', 'Stamford border', 'Cos Cob', 'Old Greenwich', 'Riverside'],
+        neighborhoods: 'Hedge funds, luxury retail, boutique offices, financial district',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '60 minutes or less',
+        majorClients: 'Serving Greenwich hedge funds and luxury retail spaces',
+        localTestimonial: {
+          text: 'Exceptional service for our hedge fund office. Understands confidentiality needs.',
+          author: 'Office Manager, Greenwich Financial Group'
+        },
+        competitorPricing: 'Premium Greenwich rates',
+        specialties: ['Hedge funds', 'Luxury retail', 'Boutique offices', 'Financial services'],
+        certifications: ['CT State Licensed', 'Financial services approved', 'MBE Certified'],
+        localKeywords: ['Greenwich commercial cleaning', 'hedge fund cleaning', 'Greenwich luxury cleaning'],
+        parkingNote: 'Valet and premium parking available',
+        unionStatus: 'Professional discretionary workforce'
+      },
+      { 
+        slug: 'westport', 
+        name: 'Westport',
+        areasCovered: ['Downtown Westport', 'Post Road East', 'Saugatuck', 'Compo', 'Greens Farms'],
+        neighborhoods: 'Professional offices, retail, luxury services, corporate facilities',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '90 minutes or less',
+        majorClients: 'Serving Westport professional offices and luxury retail',
+        localTestimonial: {
+          text: 'Perfect service for our professional office complex. Very reliable.',
+          author: 'Property Manager, Westport Corporate Center'
+        },
+        competitorPricing: 'Competitive Fairfield County luxury rates',
+        specialties: ['Professional offices', 'Retail spaces', 'Luxury services', 'Corporate facilities'],
+        certifications: ['CT Licensed', 'Luxury service certified', 'MBE Certified'],
+        localKeywords: ['Westport commercial cleaning', 'Westport office cleaning', 'Fairfield County luxury cleaning'],
+        parkingNote: 'Downtown and office complex parking',
+        unionStatus: 'Professional staff'
+      },
+      { 
+        slug: 'danbury', 
+        name: 'Danbury',
+        areasCovered: ['Downtown Danbury', 'Mill Plain Road', 'New York border', 'Industrial parks', 'Corporate centers'],
+        neighborhoods: 'Industrial complexes, corporate parks, manufacturing facilities',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '90 minutes or less',
+        majorClients: 'Serving Danbury industrial and corporate parks',
+        localTestimonial: {
+          text: 'Reliable service for our manufacturing facility. Understands industrial needs.',
+          author: 'Operations Manager, Danbury Industrial Park'
+        },
+        competitorPricing: 'Competitive industrial rates',
+        specialties: ['Industrial facilities', 'Corporate parks', 'Manufacturing', 'Warehouses'],
+        certifications: ['CT State Licensed', 'Industrial safety certified', 'MBE Certified'],
+        localKeywords: ['Danbury commercial cleaning', 'Danbury industrial cleaning', 'Connecticut manufacturing cleaning'],
+        parkingNote: 'Free industrial facility parking',
+        unionStatus: 'Union and non-union workforce'
+      },
+      { 
+        slug: 'fairfield', 
+        name: 'Fairfield',
+        areasCovered: ['Fairfield University area', 'Post Road', 'Black Rock Turnpike', 'Southport', 'Greenfield Hill'],
+        neighborhoods: 'Education facilities, professional offices, retail centers',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '90 minutes or less',
+        majorClients: 'Serving Fairfield University and surrounding professional offices',
+        localTestimonial: {
+          text: 'Great service for our university facilities. Very professional team.',
+          author: 'Facilities Director, Fairfield University'
+        },
+        competitorPricing: 'Competitive educational and professional rates',
+        specialties: ['Educational facilities', 'Professional offices', 'Retail centers', 'University buildings'],
+        certifications: ['University approved', 'Educational facility certified', 'MBE Certified'],
+        localKeywords: ['Fairfield commercial cleaning', 'Fairfield University cleaning', 'educational facility cleaning'],
+        parkingNote: 'Campus and office parking available',
+        unionStatus: 'Educational workforce'
+      },
+      { 
+        slug: 'waterbury', 
+        name: 'Waterbury',
+        areasCovered: ['Downtown Waterbury', 'Chase Parkway', 'Wolcott Street', 'Industrial corridor', 'Medical district'],
+        neighborhoods: 'Healthcare facilities, manufacturing, government buildings',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '2 hours or less',
+        majorClients: 'Serving Waterbury healthcare and manufacturing facilities',
+        localTestimonial: {
+          text: 'Dependable service for our medical center. Understands healthcare standards.',
+          author: 'Administrator, Waterbury Medical Center'
+        },
+        competitorPricing: 'Affordable healthcare and industrial rates',
+        specialties: ['Healthcare facilities', 'Manufacturing', 'Government buildings', 'Medical centers'],
+        certifications: ['Healthcare compliant', 'Industrial safety certified', 'MBE Certified'],
+        localKeywords: ['Waterbury commercial cleaning', 'Waterbury healthcare cleaning', 'Connecticut medical cleaning'],
+        parkingNote: 'Hospital and facility parking available',
+        unionStatus: 'Union workforce options'
       }
     ]
   },
@@ -706,6 +952,120 @@ export const stateData: Record<StateKey, StateInfo> = {
         localKeywords: ['Fort Lauderdale commercial cleaning', 'Las Olas janitorial', 'Fort Lauderdale beach cleaning'],
         parkingNote: 'Beach and downtown access',
         unionStatus: 'Professional staff'
+      },
+      { 
+        slug: 'west-palm-beach', 
+        name: 'West Palm Beach',
+        areasCovered: ['Downtown West Palm Beach', 'CityPlace', 'Rosemary Square', 'Palm Beach Gardens', 'Wellington'],
+        neighborhoods: 'Luxury retail, hedge funds, corporate offices, medical centers',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '90 minutes or less',
+        majorClients: 'Serving West Palm Beach luxury retail and financial offices',
+        localTestimonial: {
+          text: 'Excellent service for our luxury office complex. Very professional.',
+          author: 'Property Manager, West Palm Beach Corporate Center'
+        },
+        competitorPricing: 'Premium Palm Beach County rates',
+        specialties: ['Luxury retail', 'Hedge funds', 'Corporate offices', 'Medical facilities'],
+        certifications: ['Florida Licensed', 'Luxury service certified', 'MBE Certified'],
+        localKeywords: ['West Palm Beach commercial cleaning', 'Palm Beach County janitorial', 'luxury office cleaning'],
+        parkingNote: 'Valet and garage parking available',
+        unionStatus: 'Professional staff'
+      },
+      { 
+        slug: 'jacksonville', 
+        name: 'Jacksonville',
+        areasCovered: ['Downtown Jacksonville', 'Southside', 'Beaches', 'Airport area', 'St. Johns County'],
+        neighborhoods: 'Logistics hubs, healthcare facilities, corporate headquarters',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '2 hours or less',
+        majorClients: 'Serving Jacksonville logistics and healthcare facilities',
+        localTestimonial: {
+          text: 'Reliable service for our distribution center. Great logistics support.',
+          author: 'Operations Manager, Jacksonville Distribution Hub'
+        },
+        competitorPricing: 'Competitive Northeast Florida rates',
+        specialties: ['Logistics facilities', 'Healthcare', 'Corporate headquarters', 'Distribution centers'],
+        certifications: ['Florida Licensed', 'Logistics facility certified', 'MBE Certified'],
+        localKeywords: ['Jacksonville commercial cleaning', 'Northeast Florida janitorial', 'logistics cleaning'],
+        parkingNote: 'Free parking at most facilities',
+        unionStatus: 'Flexible workforce'
+      },
+      { 
+        slug: 'naples', 
+        name: 'Naples',
+        areasCovered: ['Downtown Naples', 'Fifth Avenue South', 'Waterside Shops', 'Pelican Bay', 'North Naples'],
+        neighborhoods: 'Ultra-luxury residential, retail, medical facilities',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '90 minutes or less',
+        majorClients: 'Serving Naples ultra-luxury residential and retail spaces',
+        localTestimonial: {
+          text: 'Outstanding service for our luxury development. Attention to detail is exceptional.',
+          author: 'Property Manager, Naples Luxury Residences'
+        },
+        competitorPricing: 'Premium Southwest Florida luxury rates',
+        specialties: ['Ultra-luxury residential', 'Luxury retail', 'Medical facilities', 'Country clubs'],
+        certifications: ['Florida Licensed', 'Luxury residential certified', 'MBE Certified'],
+        localKeywords: ['Naples commercial cleaning', 'luxury residential cleaning', 'Southwest Florida cleaning'],
+        parkingNote: 'Valet and concierge parking services',
+        unionStatus: 'Professional luxury staff'
+      },
+      { 
+        slug: 'fort-myers', 
+        name: 'Fort Myers',
+        areasCovered: ['Downtown Fort Myers', 'Gulf Coast Town Center', 'Coconut Point', 'Colonial Boulevard', 'Medical corridor'],
+        neighborhoods: 'Growing commercial hubs, medical centers, retail developments',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '90 minutes or less',
+        majorClients: 'Serving Fort Myers medical centers and commercial developments',
+        localTestimonial: {
+          text: 'Great service for our medical facility. Understands healthcare needs.',
+          author: 'Administrator, Fort Myers Medical Center'
+        },
+        competitorPricing: 'Competitive Southwest Florida rates',
+        specialties: ['Medical centers', 'Commercial hubs', 'Retail developments', 'Healthcare facilities'],
+        certifications: ['Healthcare compliant', 'Florida Licensed', 'MBE Certified'],
+        localKeywords: ['Fort Myers commercial cleaning', 'Southwest Florida medical cleaning', 'Fort Myers janitorial'],
+        parkingNote: 'Medical center and retail parking',
+        unionStatus: 'Professional healthcare workforce'
+      },
+      { 
+        slug: 'boca-raton', 
+        name: 'Boca Raton',
+        areasCovered: ['Corporate Center', 'Town Center', 'Mizner Park', 'University campus', 'Technology parks'],
+        neighborhoods: 'Corporate offices, financial institutions, universities, tech companies',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '90 minutes or less',
+        majorClients: 'Serving Boca Raton corporate offices and financial institutions',
+        localTestimonial: {
+          text: 'Professional service for our corporate headquarters. Very reliable team.',
+          author: 'Facilities Manager, Boca Raton Corporate Center'
+        },
+        competitorPricing: 'Premium South Florida corporate rates',
+        specialties: ['Corporate offices', 'Financial institutions', 'Universities', 'Technology companies'],
+        certifications: ['Financial services approved', 'University certified', 'MBE Certified'],
+        localKeywords: ['Boca Raton commercial cleaning', 'South Florida corporate cleaning', 'Boca office cleaning'],
+        parkingNote: 'Corporate campus parking available',
+        unionStatus: 'Professional corporate workforce'
+      },
+      { 
+        slug: 'st-petersburg', 
+        name: 'St. Petersburg',
+        areasCovered: ['Downtown St. Petersburg', 'Central Avenue', 'Westshore', 'Gateway area', 'Medical district'],
+        neighborhoods: 'Downtown office market, retail centers, healthcare facilities',
+        localPhone: '1-800-TOTAL-FS',
+        responseTime: '90 minutes or less',
+        majorClients: 'Serving St. Petersburg downtown offices and healthcare facilities',
+        localTestimonial: {
+          text: 'Excellent service for our downtown office building. Very professional.',
+          author: 'Building Manager, St. Petersburg Office Tower'
+        },
+        competitorPricing: 'Competitive Tampa Bay area rates',
+        specialties: ['Downtown offices', 'Retail centers', 'Healthcare facilities', 'Medical centers'],
+        certifications: ['Florida Licensed', 'Healthcare compliant', 'MBE Certified'],
+        localKeywords: ['St. Petersburg commercial cleaning', 'Tampa Bay cleaning', 'St. Pete office cleaning'],
+        parkingNote: 'Downtown parking garages available',
+        unionStatus: 'Professional workforce'
       }
     ]
   }
