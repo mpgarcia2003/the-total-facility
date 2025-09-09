@@ -249,6 +249,7 @@ export const stateData: Record<StateKey, StateInfo> = {
         localTestimonial: {
           text: 'The Total Facility has maintained our 40-floor office building for 3 years. Their attention to detail is exceptional.',
           author: 'Property Manager, Midtown Manhattan'
+        },
         competitorPricing: 'Save 15-20% compared to other Manhattan commercial cleaners',
         specialties: ['High-rise buildings', 'Trading floors', 'Luxury retail spaces', 'Medical offices'],
         certifications: ['NYC DOB Licensed', 'REBNY Approved Vendor', 'MBE Certified'],
