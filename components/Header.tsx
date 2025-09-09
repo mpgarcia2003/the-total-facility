@@ -13,9 +13,9 @@ export default function Header() {
       <div className="bg-blue-900 text-white py-2">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <p className="text-sm">MBE Certified • Licensed • Bonded • Insured</p>
-          <a href="tel:1-800-TOTAL-FS" className="flex items-center space-x-2">
+          <a href="tel:8444543101" className="flex items-center space-x-2">
             <FaPhone />
-            <span className="font-bold">1-800-TOTAL-FS</span>
+            <span className="font-bold">(844) 454-3101</span>
           </a>
         </div>
       </div>
