@@ -45,11 +45,6 @@ const services = [
 export default function HomePage() {
   return (
     <>
-      {/* TEST BANNER - Connection Test with Claude & Vercel - Updated */}
-      <div className="bg-gradient-to-r from-green-500 to-blue-500 text-white py-3 text-center font-bold animate-pulse">
-        🚀 LIVE UPDATE TEST - www.TheTotalFacility.com - Cache Cleared! 🚀
-      </div>
-      
       <Hero />
       
       {/* Trust Indicators */}
