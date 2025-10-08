@@ -26,7 +26,6 @@ export async function POST(request: NextRequest) {
     }
 
     // Create email content
-    const emailSubject = `NEW QUOTE REQUEST - ${company} (${city})`
     const emailBody = `
 New Quote Request from The Total Facility Services Website
 
