@@ -17,15 +17,6 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
     notFound()
   }
 
-  // Get all cities across all states
-  const allCities = Object.entries(stateData).flatMap(([stateKey, stateInfo]) =>
-    stateInfo.cities.map(city => ({
-      ...city,
-      state: stateInfo.name,
-      stateSlug: stateKey,
-    }))
-  )
-
   return (
     <div className="min-h-screen pt-24">
       {/* Hero Section */}
@@ -75,7 +66,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               </div>
             </div>
 
-            <h3 className="text-2xl font-bold mb-4">What's Included</h3>
+            <h3 className="text-2xl font-bold mb-4">What&apos;s Included</h3>
             <div className="grid md:grid-cols-2 gap-4 mb-8">
               {service.features.map((feature, index) => (
                 <div key={index} className="flex items-start gap-3 bg-gray-50 p-4 rounded-lg">
@@ -135,7 +126,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                         {city.responseTime}
                       </div>
                       <div className="text-blue-600 hover:underline font-semibold">
-                        View Details & Get Quote →
+                        View Details &amp; Get Quote →
                       </div>
                     </Link>
                   ))}

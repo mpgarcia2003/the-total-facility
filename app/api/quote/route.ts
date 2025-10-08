@@ -67,7 +67,8 @@ Submitted at: ${new Date().toLocaleString('en-US', {
       city,
       sqft,
       address,
-      message
+      message,
+      emailPreview: emailBody.substring(0, 100)
     })
 
     // TODO: Add email service integration here
