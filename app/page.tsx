@@ -45,6 +45,11 @@ const services = [
 export default function HomePage() {
   return (
     <>
+      {/* TEST BANNER - Connection Test with Claude & Vercel */}
+      <div className="bg-gradient-to-r from-green-500 to-blue-500 text-white py-3 text-center font-bold">
+        🚀 CONNECTION TEST SUCCESSFUL - Claude → GitHub → Vercel 🚀
+      </div>
+      
       <Hero />
       
       {/* Trust Indicators */}
