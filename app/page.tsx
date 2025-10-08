@@ -5,40 +5,40 @@ import { FaShieldAlt, FaClock, FaAward, FaLeaf } from 'react-icons/fa'
 
 const services = [
   {
-    title: 'Daily Janitorial Services',
-    description: 'Professional cleaning staff for your facility every day',
-    icon: '🏢',
-    link: '/locations'
+    title: 'Day Porter Services',
+    description: 'Professional staff during business hours',
+    icon: '👔',
+    link: '/services/day-porter'
   },
   {
     title: 'Emergency Response 24/7',
     description: 'Immediate response for floods, spills, and disasters',
     icon: '🚨',
-    link: '/emergency'
+    link: '/services/emergency-cleaning'
+  },
+  {
+    title: 'Office Cleaning',
+    description: 'Complete office cleaning solutions',
+    icon: '🏢',
+    link: '/services/office-cleaning'
   },
   {
     title: 'Floor Care Specialists',
     description: 'Strip, wax, buff, and carpet cleaning experts',
     icon: '✨',
-    link: '/locations'
-  },
-  {
-    title: 'Medical Grade Cleaning',
-    description: 'HIPAA compliant, terminal cleaning for healthcare',
-    icon: '🏥',
-    link: '/locations'
+    link: '/services/floor-stripping-waxing'
   },
   {
     title: 'Post-Construction',
     description: 'Complete cleanup for renovations and new builds',
     icon: '🔨',
-    link: '/locations'
+    link: '/services/post-construction'
   },
   {
-    title: 'Day Porter Services',
-    description: 'Professional staff during business hours',
-    icon: '👔',
-    link: '/locations'
+    title: 'Educational Facilities',
+    description: 'Specialized cleaning for schools and universities',
+    icon: '🎓',
+    link: '/services/educational-facility-cleaning'
   }
 ]
 
