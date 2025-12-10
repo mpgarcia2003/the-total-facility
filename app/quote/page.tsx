@@ -21,8 +21,7 @@ import {
   FaCalendar,
   FaUser,
   FaClipboardList,
-  FaClock,
-  FaDollarSign
+  FaClock
 } from 'react-icons/fa';
 import { Sparkles } from 'lucide-react';
 
