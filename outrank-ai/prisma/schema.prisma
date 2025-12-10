@@ -1,0 +1,172 @@
+// This is your Prisma schema file for OutrankAI multi-tenant SaaS
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("OUTRANKAI_POSTGRES_URL")
+}
+
+model Tenant {
+  id        String   @id @default(uuid())
+  name      String
+  domain    String   @unique
+  brandBio  String?
+  createdAt DateTime @default(now())
+  plan      String   @default("starter")
+  limits    Json     @default("{}")
+  
+  connections        Connection[]
+  jobs              Job[]
+  pages             Page[]
+  artifacts         Artifact[]
+  competitors       Competitor[]
+  gapRecommendations GapRecommendation[]
+  drafts            Draft[]
+  publishEvents     PublishEvent[]
+  limitsLedger      LimitsLedger[]
+  
+  @@index([domain])
+}
+
+model Connection {
+  id         String   @id @default(uuid())
+  tenantId   String
+  type       String   // "shopify", "gsc", "s3", etc.
+  meta       Json     @default("{}")
+  secretRef  String?  // reference to secure vault
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  
+  @@index([tenantId, type])
+}
+
+model Job {
+  id         String    @id @default(uuid())
+  tenantId   String
+  type       String    // "crawl_site", "analyze_site", "competitors_discovery", etc.
+  status     String    @default("pending")
+  startedAt  DateTime?
+  finishedAt DateTime?
+  stats      Json      @default("{}")
+  errorText  String?
+  
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  
+  @@index([tenantId, status])
+  @@index([type, status])
+}
+
+model Page {
+  id            String    @id @default(uuid())
+  tenantId      String
+  url           String
+  sourceType    String    // "own" or "competitor"
+  etag          String?
+  lastCrawledAt DateTime?
+  tokens        Int       @default(0)
+  hasSchema     Boolean   @default(false)
+  vectorsRef    String?   // reference to vector store
+  content       String?   @db.Text
+  metadata      Json      @default("{}")
+  
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  
+  @@unique([tenantId, url])
+  @@index([tenantId, sourceType])
+}
+
+model Artifact {
+  id         String   @id @default(uuid())
+  tenantId   String
+  type       String   // "crawl_result", "analysis", "outline", etc.
+  sourceUrl  String?
+  data       Json     @default("{}")
+  provenance Json     @default("{}")
+  createdAt  DateTime @default(now())
+  
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  
+  @@index([tenantId, type])
+}
+
+model Competitor {
+  id            String    @id @default(uuid())
+  tenantId      String
+  domain        String
+  metrics       Json      @default("{}")
+  profile       Json      @default("{}")
+  lastCrawledAt DateTime?
+  
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  
+  @@unique([tenantId, domain])
+}
+
+model GapRecommendation {
+  id               String   @id @default(uuid())
+  tenantId         String
+  keyword          String
+  title            String
+  intent           String   // "informational", "transactional", etc.
+  priority         Int      @default(0)
+  reason           Json     @default("{}")
+  estimatedVolume  Int?
+  serpFeatures     Json     @default("[]")
+  createdAt        DateTime @default(now())
+  
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  
+  @@index([tenantId, priority])
+}
+
+model Draft {
+  id        String   @id @default(uuid())
+  tenantId  String
+  status    String   @default("draft")
+  html      String   @db.Text
+  markdown  String   @db.Text
+  metadata  Json     @default("{}")
+  scores    Json     @default("{}")
+  images    Json     @default("[]")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  tenant        Tenant         @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  publishEvents PublishEvent[]
+  
+  @@index([tenantId, status])
+}
+
+model PublishEvent {
+  id        String   @id @default(uuid())
+  tenantId  String
+  draftId   String
+  provider  String   // "shopify", "wordpress", etc.
+  payload   Json     @default("{}")
+  result    Json     @default("{}")
+  createdAt DateTime @default(now())
+  
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  draft  Draft  @relation(fields: [draftId], references: [id], onDelete: Cascade)
+  
+  @@index([tenantId, provider])
+}
+
+model LimitsLedger {
+  id          String   @id @default(uuid())
+  tenantId    String
+  tokensUsed  Int      @default(0)
+  storageMb   Float    @default(0)
+  jobsRun     Int      @default(0)
+  periodStart DateTime
+  periodEnd   DateTime
+  
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  
+  @@index([tenantId, periodStart])
+}

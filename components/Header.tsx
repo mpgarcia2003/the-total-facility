@@ -42,10 +42,16 @@ export default function Header() {
             <Link href="/about" className="hover:text-blue-600">About</Link>
             <Link href="/emergency" className="text-red-600 font-bold">Emergency</Link>
             <Link 
+              href="/quote" 
+              className="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-400 font-semibold"
+            >
+              Instant Quote
+            </Link>
+            <Link 
               href="/contact" 
               className="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800"
             >
-              Get Quote
+              Contact
             </Link>
           </div>
 
@@ -66,7 +72,8 @@ export default function Header() {
             <Link href="/locations" className="block py-2 hover:text-blue-600">Locations</Link>
             <Link href="/about" className="block py-2 hover:text-blue-600">About</Link>
             <Link href="/emergency" className="block py-2 text-red-600 font-bold">Emergency</Link>
-            <Link href="/contact" className="block py-2 text-blue-900 font-bold">Get Quote</Link>
+            <Link href="/quote" className="block py-2 text-teal-500 font-bold">Instant Quote</Link>
+            <Link href="/contact" className="block py-2 text-blue-900 font-bold">Contact</Link>
           </div>
         )}
       </nav>
